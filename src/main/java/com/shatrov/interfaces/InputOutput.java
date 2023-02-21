@@ -1,4 +1,4 @@
-package com.shatrov.demo;
+package com.shatrov.interfaces;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
@@ -6,6 +6,9 @@ import java.util.Set;
 import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.function.Supplier;
+/**
+ * Интерфейс, который позволяет работать с консольным меню(ввод и ввывод данных)
+ */
 
 public interface InputOutput {
 

@@ -17,14 +17,14 @@ public class AddReviewToProduct extends Item{
     @Override
     public void perform() {
         int id = inputOutput.getInteger("Введите ID продукта: ");
-        Product product = management.getProduct(id);
+        Product product = functionsManagement.getProduct(id);
         if(product == null) {
             inputOutput.display("Продукта с таким ID не найдено в БД!!!");
         } else {
             String description = inputOutput.getString("Напишите отзыв: ");
             int stars = inputOutput.getInteger("Введите оценку: ");
             Review review = new Review(description, stars);
-            management.addProductReview(id, review);
+            functionsManagement.addProductReview(id, review);
         }
 
 

@@ -12,7 +12,6 @@ public class App
 {
     public static void main( String[] args )
     {
-
         ConsoleInputOutput inputOutput = new ConsoleInputOutput();
 
         ConsoleMenu menu = new ConsoleMenu(inputOutput, new Item[]{
@@ -20,24 +19,9 @@ public class App
                 new AddReviewToProduct(inputOutput),
                 new ViewAllProducts(inputOutput),
                 new ViewProductAndReviews(inputOutput),
+                new RemoveProduct(inputOutput),
+                new RemoveReview(inputOutput),
                 new ExitItem(inputOutput)});
         menu.runMenu();
-
-
-
-
-
-
-
-
-//        AnnotationConfigApplicationContext context =
-//                new AnnotationConfigApplicationContext(MyConfig.class);
-//
-//        FunctionsManagement  management = context.getBean("functionsManagement", FunctionsManagement.class);
-//
-//        Product product = new Product("Iphone 12", "Blue color", 50000);
-//
-//        management.sessionFactoryClose();
-//        context.close();
     }
 }

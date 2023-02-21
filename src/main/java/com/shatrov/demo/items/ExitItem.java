@@ -12,7 +12,7 @@ public class ExitItem extends Item {
 
     @Override
     public void perform() {
-        management.sessionFactoryClose();
+        functionsManagement.completion();
         context.close();
     }
 

@@ -10,7 +10,7 @@ public class AddProduct extends Item{
 
     @Override
     public String displayedName() {
-        return "Добавить товар";
+        return "Добавить продукт";
     }
 
     @Override
@@ -19,6 +19,6 @@ public class AddProduct extends Item{
         String description = inputOutput.getString("Описание продукта: ");
         int price = inputOutput.getInteger("Цена: ");
         Product product = new Product(name, description, price);
-        management.addProduct(product);
+        functionsManagement.addProduct(product);
     }
 }

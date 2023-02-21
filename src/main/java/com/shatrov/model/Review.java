@@ -13,7 +13,7 @@ public class Review {
     private String description;
     @Column(name = "stars")
     private int stars;
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne(cascade = {CascadeType.DETACH, CascadeType.MERGE, CascadeType.REFRESH, CascadeType.PERSIST})
     @JoinColumn(name = "product_id")
     private Product product;
 

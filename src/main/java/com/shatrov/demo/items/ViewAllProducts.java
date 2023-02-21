@@ -17,7 +17,7 @@ public class ViewAllProducts extends Item{
 
     @Override
     public void perform() {
-        List<Product> listProduct = management.getListProduct();
+        List<Product> listProduct = functionsManagement.getListProduct();
 //        inputOutput.display(listProduct.toString());
         listProduct.forEach((obj)->inputOutput.display(obj.toString() + "\n"));
     }

@@ -1,8 +1,10 @@
 package com.shatrov.demo;
 
+import com.shatrov.interfaces.InputOutput;
+
 import java.util.Scanner;
 
-public class ConsoleInputOutput implements InputOutput{
+public class ConsoleInputOutput implements InputOutput {
     private final Scanner scanner = new Scanner(System.in);
 
     @Override

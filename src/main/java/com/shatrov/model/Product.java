@@ -18,7 +18,6 @@ public class Product {
     @Column(name = "price")
     private int price;
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "product")
-//    @JoinColumn(name = "product_id")
     private List<Review> reviews = new ArrayList<>();
 
     public Product() {
