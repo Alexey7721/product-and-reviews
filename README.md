@@ -13,7 +13,6 @@
 - удаление из [БД][1] отзыва на продукт;
 - просмотр всех продуктов, сохраненных [БД][1];
 - просмотр продукта и всех отзывов на него;
-[Int](https://github.com/Alexey7721/hibernate-spring-postgresql/blob/master/src/main/java/com/shatrov/interfaces/InputOutput.java)
 
 #### Интерфейсы 
 - [InputOutput](https://github.com/Alexey7721/hibernate-spring-postgresql/blob/master/src/main/java/com/shatrov/interfaces/InputOutput.java)
@@ -40,7 +39,8 @@
 - [IntelliJ IDEA](https://www.jetbrains.com/idea/);
 - [PostgreSQL](https://www.postgresql.org/);
 <br>
-### Скрипт PostgreSQL для создания таблиц
+###  Скрипт PostgreSQL для создания таблиц
+<br>
 
 ```
 create table directors(
