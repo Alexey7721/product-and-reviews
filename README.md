@@ -46,15 +46,15 @@
 create table directors(
     id serial primary key,
     name varchar(45),
-	description text,
-	price INTEGER
+    description text,
+    price INTEGER
 );
 
 create table reviews(
     id serial primary key,
     number integer,
     description text,
-	stars INTEGER,
+    stars INTEGER,
     product_id integer references products(id)
 );
 ```
