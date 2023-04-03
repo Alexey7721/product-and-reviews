@@ -20,13 +20,11 @@
 - просмотр всех продуктов, сохраненных [БД][1];
 - просмотр продукта и всех отзывов на него;
 
-#### Интерфейсы 
+### Интерфейсы 
 - [InputOutput](https://github.com/Alexey7721/hibernate-spring-postgresql/blob/master/src/main/java/com/shatrov/interfaces/InputOutput.java)
 - [OpeningClosingSessions](https://github.com/Alexey7721/hibernate-spring-postgresql/blob/master/src/main/java/com/shatrov/interfaces/OpeningClosingSessions.java)
 - [ProgramFunctionality](https://github.com/Alexey7721/hibernate-spring-postgresql/blob/master/src/main/java/com/shatrov/interfaces/ProgramFunctionality.java)
 <br>
-<br>
-
 
 ## __Языки и инструменты__
 
@@ -38,18 +36,12 @@
 [![Hibenate](icons/hibernate-1.png)](https://hibernate.org/)
 [![Visual studio code](icons/visual-studio-code-2019-48.png)](https://code.visualstudio.com/)
 <br>
-<br>
 
 ## __Установка и настойка__
-### Для запуска данного кода скачатйте и установите:
-- [IntelliJ IDEA](https://www.jetbrains.com/idea/);
-- [PostgreSQL](https://www.postgresql.org/);
-<br>
-###  Скрипт PostgreSQL для создания таблиц
-<br>
-
-```
-create table directors(
+### Перед запуском данного кода:
+- #### Создайте базу данных и таблицы;
+```postgresql
+create table products(
     id serial primary key,
     name varchar(45),
     description text,
@@ -62,9 +54,10 @@ create table reviews(
     description text,
     stars INTEGER,
     product_id integer references products(id)
-);
+); 
 ```
-### В [hibernate.cfg.xml](https://github.com/Alexey7721/hibernate-spring-postgresql/blob/master/src/main/resources/hibernate.cfg.xml) укажите название, имя пользователя и пароль базы данных.
+
+- #### В [hibernate.cfg.xml](https://github.com/Alexey7721/hibernate-spring-postgresql/blob/master/src/main/resources/hibernate.cfg.xml) укажите название, имя пользователя и пароль базы данных.
 ```xml
 <?xml version='1.0' encoding='utf-8'?>
 <!DOCTYPE hibernate-configuration PUBLIC
